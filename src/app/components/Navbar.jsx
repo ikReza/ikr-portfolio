@@ -11,7 +11,7 @@ const Navlink = ({ href, title, className, line }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] ${line} absolute left-0 -bottom-0.5 
+        className={`h-[2px] ${line} absolute left-0 -bottom-1 
                     group-hover:w-full transition-[width] duration-300
                     ${pathname === href ? "w-full" : "w-0"}`}
       />
@@ -37,7 +37,7 @@ const Navbar = () => {
           line="bg-black"
         />
       </nav>
-      <h2>Ibrahim Kaiser</h2>
+      <h2 className="font-bold text-xl">Ibrahim Kaiser</h2>
       <nav className="flex items-center justify-center flex-wrap">
         <Link href="/" target="_blank" className="w-6 mr-3">
           <TwitterIcon />

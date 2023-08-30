@@ -2,13 +2,15 @@ import Image from "next/image";
 import HomeLayout from "./components/HomeLayout";
 import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
+import { LinkArrow } from "./components/Icons";
+import HireMe from "./components/HireMe";
 
 export default function Home() {
   return (
-    <main className="flex items-center min-h-[90vh] mx-4 border border-black">
+    <main className="flex items-center min-h-[85vh] mx-4">
       <HomeLayout className="pt-0">
-        <div className="flex items-center justify-between w-full border-2 border-blue-500">
-          <div className="w-1/2 mx-auto border-2 border-green-400">
+        <div className="flex items-center justify-between w-full">
+          <div className="w-1/2 mx-auto">
             <Image
               src="/profile/dev-pic.png"
               alt="Developer Image"
@@ -32,15 +34,32 @@ export default function Home() {
             <div className="flex items-center self-start mt-2">
               <Link
                 href="/"
-                className="flex items-center bg-black text-[whitesmoke] p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-[whitesmoke] hover:text-black border-2 border-solid border-transparent hover:border-black"
+                className="flex items-center bg-black text-[whitesmoke] p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-[whitesmoke] hover:text-black border-2 border-transparent hover:border-black"
               >
-                Resume
+                Resume <LinkArrow className="!w-6 ml-1" />
               </Link>
-              <Link href="mailto:ikreza00@gmail.com">Contact</Link>
+              <Link
+                href="mailto:ikreza00@gmail.com"
+                className="ml-4 text-lg font-medium capitalize underline"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>
       </HomeLayout>
+
+      <HireMe />
+      <div className="absolute right-8 bottom-8 w-24">
+        <Image
+          src="/profile/lightBulb.svg"
+          alt="Light Bulb"
+          width={100}
+          height={0}
+        />
+      </div>
     </main>
   );
 }
+
+//absolute right-8 bottom-8 inline-block w-24
