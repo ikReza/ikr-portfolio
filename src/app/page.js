@@ -14,15 +14,15 @@ export default function Home() {
             <Image
               src="/profile/dev-pic.png"
               alt="Developer Image"
-              width={520}
+              width={500}
               height={0}
-              className="rounded-bl-[50%] mx-auto"
+              className="rounded-bl-[40%] mx-auto"
               priority
             />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center">
             <AnimatedText
-              text="Turning Vision into Relaity with Code and Design."
+              text="Turning Vision into Reality with Code and Design."
               className="!text-6xl text-left"
             />
             <p className="my-4 font-medium">
@@ -56,6 +56,7 @@ export default function Home() {
           alt="Light Bulb"
           width={100}
           height={0}
+          className="animate-pulse"
         />
       </div>
     </main>

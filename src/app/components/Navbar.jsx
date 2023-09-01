@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, LinkedinIcon, PokeBall, TwitterIcon } from "./Icons";
 
 const Navlink = ({ href, title, className, line }) => {
   const pathname = usePathname();
@@ -49,8 +50,15 @@ const Navbar = () => {
         >
           <GithubIcon />
         </Link>
-        <Link href="/" target="_blank" className="w-6 ml-3">
+        <Link href="/" target="_blank" className="w-6 mx-3">
           <LinkedinIcon />
+        </Link>
+        <Link
+          href="/"
+          target="_blank"
+          className="w-6 ml-3 animate-bounce hover:animate-none"
+        >
+          <PokeBall className="shadow-lg shadow-black rounded-full" />
         </Link>
       </nav>
     </header>
