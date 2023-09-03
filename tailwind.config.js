@@ -10,6 +10,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 10s linear infinite",
       },
+      colors: {
+        darkPrimary: "#223333",
+      },
     },
   },
   plugins: [],

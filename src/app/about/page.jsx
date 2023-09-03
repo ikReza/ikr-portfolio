@@ -3,6 +3,7 @@ import AnimatedText from "../components/AnimatedText";
 import HomeLayout from "../components/HomeLayout";
 import AnimatedNumbers from "./AnimatedNumbers";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 const About = () => {
   return (
@@ -72,6 +73,7 @@ const About = () => {
           </div>
         </div>
         <Experience />
+        <Skills />
       </HomeLayout>
     </main>
   );
