@@ -97,9 +97,13 @@ const Navbar = () => {
             line="bg-black"
           />
         </nav>
-        
+
         <nav className="flex items-center justify-center flex-wrap">
-          <Link href="/" target="_blank" className="w-6 mr-3">
+          <Link
+            href="https://twitter.com/ik_reza00"
+            target="_blank"
+            className="w-6 mr-3"
+          >
             <TwitterIcon />
           </Link>
           <Link
@@ -109,7 +113,11 @@ const Navbar = () => {
           >
             <GithubIcon />
           </Link>
-          <Link href="/" target="_blank" className="w-6 mx-3">
+          <Link
+            href="https://www.linkedin.com/in/ibrahim-kaiser/"
+            target="_blank"
+            className="w-6 mx-3"
+          >
             <LinkedinIcon />
           </Link>
           <Link
@@ -135,7 +143,11 @@ const Navbar = () => {
             <MobileLink href="/projects" title="Projects" toggle={handleMenu} />
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-4">
-            <Link href="/" target="_blank" className="w-6 mr-3">
+            <Link
+              href="https://twitter.com/ik_reza00"
+              target="_blank"
+              className="w-6 mr-3"
+            >
               <TwitterIcon />
             </Link>
             <Link
@@ -145,7 +157,11 @@ const Navbar = () => {
             >
               <GithubIcon />
             </Link>
-            <Link href="/" target="_blank" className="w-6 mx-3">
+            <Link
+              href="https://www.linkedin.com/in/ibrahim-kaiser/"
+              target="_blank"
+              className="w-6 mx-3"
+            >
               <LinkedinIcon />
             </Link>
             <Link
@@ -158,7 +174,9 @@ const Navbar = () => {
           </nav>
         </motion.div>
       )}
-      <h2 className="absolute left-[50%] translate-x-[-50%] font-bold text-xl">Ibrahim Kaiser</h2>
+      <h2 className="absolute left-[50%] translate-x-[-50%] font-bold text-xl">
+        Ibrahim Kaiser
+      </h2>
     </header>
   );
 };
