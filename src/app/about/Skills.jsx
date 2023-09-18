@@ -9,7 +9,7 @@ import {
   FaGithub,
   FaPython,
 } from "react-icons/fa";
-// import {TbBrandNextjs} from "react-icons/tb"
+
 import {
   SiNextdotjs,
   SiMongodb,
@@ -89,9 +89,9 @@ const Skills = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div>
-      <h2 className="mb-10 text-3xl font-medium text-center">Skills</h2>
-      <div className="">
+    <div className="mt-48 mx-auto flex flex-col items-center">
+      <h2 className="mb-32 text-8xl font-bold text-center">Skills</h2>
+      <div className="flex flex-col w-full h-[360px]">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto mb-4">
           {aboutData.map((item, itemIdx) => (
             <button
@@ -105,15 +105,22 @@ const Skills = () => {
             </button>
           ))}
         </div>
-        <div className="">
+        <div className="py-2 md:py-6 flex flex-col items-center gap-y-2 md:gap-y-4">
           {aboutData[index].info.map((item, itemIdx) => (
-            <div key={itemIdx}>
-              <div>{item.subTitle}</div>
-              <div className="hidden">-</div>
+            <div
+              key={itemIdx}
+              className="flex flex-col items-center md:flex-row gap-x-2"
+            >
+              <div className="font-light mb-2 text-center md:mb-0">
+                {item.subTitle}
+              </div>
+              <div className="hidden md:flex">-</div>
               <div>{item.stage}</div>
               <div className="flex gap-x-4">
                 {item.icons?.map((icon, iconIdx) => (
-                  <div key={iconIdx} className="text-2xl">{icon}</div>
+                  <div key={iconIdx} className="text-2xl">
+                    {icon}
+                  </div>
                 ))}
               </div>
             </div>
@@ -126,5 +133,4 @@ const Skills = () => {
 
 export default Skills;
 
-//py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start
-//hidden md:flex
+//flex flex-col w-full xl:max-w-[48%] h-[480px]
