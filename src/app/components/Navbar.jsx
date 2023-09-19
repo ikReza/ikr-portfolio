@@ -174,9 +174,9 @@ const Navbar = () => {
           </nav>
         </motion.div>
       )}
-      <h2 className="absolute left-[50%] translate-x-[-50%] font-bold text-xl">
+      <Link href="/" className="absolute left-[50%] translate-x-[-50%] font-bold text-xl">
         Ibrahim Kaiser
-      </h2>
+      </Link>
     </header>
   );
 };
