@@ -21,7 +21,7 @@ const Navlink = ({ href, title, className, line }) => {
   );
 };
 
-const MobileLink = ({ href, title, className, line, toggle }) => {
+const MobileLink = ({ href, title, className, toggle }) => {
   const pathname = usePathname();
   const router = useRouter();
 
@@ -174,7 +174,10 @@ const Navbar = () => {
           </nav>
         </motion.div>
       )}
-      <Link href="/" className="absolute left-[50%] translate-x-[-50%] font-bold text-xl">
+      <Link
+        href="/"
+        className="absolute left-[50%] translate-x-[-50%] font-bold text-xl"
+      >
         Ibrahim Kaiser
       </Link>
     </header>

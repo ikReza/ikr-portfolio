@@ -16,7 +16,7 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-full lg:w-1/2 rounded-lg overflow-hidden"
+        className="w-full lg:w-1/2 rounded-lg overflow-hidden shadow-lg drop-shadow-lg"
       >
         <FramerImage
           src={img}
@@ -61,9 +61,15 @@ const Projects = ({ title, type, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-full rounded-lg overflow-hidden"
+        className="w-full rounded-lg overflow-hidden shadow-lg drop-shadow-lg"
       >
-        <Image src={img} width={500} height={0} priority />
+        <Image
+          src={img}
+          width={500}
+          height={0}
+          className="w-full h-60 md:h-72"
+          priority
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
@@ -114,11 +120,11 @@ const Project = () => {
           </div>
           <div className="col-span-6 max-sm:col-span-12">
             <Projects
-              title="Blog Application"
-              link="https://ikr-blog-ikreza.vercel.app/"
-              type="Blog Project"
-              img="/profile/blog-1.png"
-              github="https://github.com/ikReza/ostad-learning/tree/main/Module-12/assignment"
+              title="Agency Website"
+              link="https://agency-website1.vercel.app/"
+              type="Featured Project"
+              img="/profile/agency-website.png"
+              github="https://github.com/ikReza/agency-website1"
             />
           </div>
           <div className="col-span-6 max-sm:col-span-12">
